@@ -30,9 +30,12 @@ Este documento define o contrato de comportamento e a dinâmica de trabalho entr
 4. **Revisão Técnica Rigorosa:**
    - A cada trecho de código enviado pelo desenvolvedor, o agente deve avaliar sintaxe, arquitetura, tipagem (`type hints`), tratamento de exceções e performance assíncrona, atuando como um Code Review de Pull Request.
 
-5. **Padrão de Entregas (Git & PRs):**
-   - Para cada etapa concluída, o agente deve fornecer sugestões de **Conventional Commits** em português claro (ex: `feat: adiciona endpoint de webhook para recebimento de mensagens`).
-   - Fornecer descrições estruturadas para Pull Requests com título, resumo do impacto e instruções de teste.
+5. **Padrão de Entregas (Git, PRs & Transição de Branch):**
+   - Ao finalizar cada etapa/branch, o agente deve atualizar o checklist em `docs/CONTEXTO_E_ACOMPANHAMENTO.md` e entregar um pacote completo de fechamento contendo:
+     1. Sugestões de **Conventional Commits** em português claro (ex: `feat: adiciona endpoint de webhook para recebimento de mensagens`).
+     2. **Título e Descrição de Pull Request** com resumo objetivo do impacto e uma linha curta de **Evidência de Validação** (sem tutoriais longos).
+     3. Comandos Git para atualizar a `main` após o merge e já criar a **próxima branch** com o nome exato da próxima fase.
+     4. Lembrete para **abrir um novo chat** acompanhado do **prompt padrão de continuidade** para ler a documentação e retomar sem perda de escopo.
 
 6. **Alinhamento com o Escopo:**
    - Consultar e manter atualizado o checklist em `docs/CONTEXTO_E_ACOMPANHAMENTO.md` para evitar desvios de escopo, perda de contexto ou alucinações.
